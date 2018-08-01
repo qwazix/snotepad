@@ -4,3 +4,5 @@
 * pygments
 * open intent
 * save as
+* bundle undos
+* move everything from internal to shared

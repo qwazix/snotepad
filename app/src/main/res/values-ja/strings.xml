@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SNotepad</string>
+    <string name="app_name">YellowPad</string>
     <string name="action_refresh">更新</string>
     <string name="action_sort_by_name">名前でソート</string>
     <string name="action_sort_by_date">日付でソート</string>

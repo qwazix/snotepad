@@ -1,4 +1,4 @@
-package info.aario.snotepad;
+package com.qwazix.yellowpad;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

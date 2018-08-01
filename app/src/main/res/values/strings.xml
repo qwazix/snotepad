@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SNotepad</string>
+    <string name="app_name">YellowPad</string>
     <string name="action_refresh">Refresh</string>
     <string name="action_sort_by_name">Sort by Name</string>
     <string name="action_sort_by_date">Sort by Date</string>
@@ -11,7 +11,7 @@
     <string name="btUndo_title">Undo</string>
     <string name="btRedo_text">Redo</string>
     <string name="saving_path">Path to save notes:</string>
-    <string name="default_path">/storage/emulated/0/Android/data/info.aario.snotepad/files</string>
+    <string name="default_path">/storage/emulated/0/Android/data/com.qwazix.yellowpad/files</string>
     <string name="default_shared_path">/storage/emulated/0/Notes</string>
     <string name="btChangePath_title">Select Folder</string>
     <string name="tvVersion_text">Version: </string>
@@ -35,7 +35,7 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="cancel">Cancel</string>
-    <string name="preferences_file_key">info.aario.snotepad.PREFERENCES</string>
+    <string name="preferences_file_key">com.qwazix.yellowpad.PREFERENCES</string>
     <string name="pref_title_settings">Settings</string>
     <string name="pref_title_system_settings">System Settings</string>
     <string name="save_location">Save Location</string>

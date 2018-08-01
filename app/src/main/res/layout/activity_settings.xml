@@ -31,7 +31,7 @@
 
         <fragment
             android:id="@+id/mainImagesList"
-            android:name="info.aario.snotepad.SettingsFragment"
+            android:name="com.qwazix.yellowpad.SettingsFragment"
             android:layout_width="match_parent"
             android:layout_height="62dp"
             android:layout_below="@+id/addimagebutton"

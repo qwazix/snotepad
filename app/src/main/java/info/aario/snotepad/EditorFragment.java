@@ -1,4 +1,4 @@
-package info.aario.snotepad;
+package com.qwazix.yellowpad;
 
 import android.content.Intent;
 import android.os.Bundle;

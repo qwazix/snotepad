@@ -105,7 +105,7 @@
 
 
 
-package info.aario.snotepad;
+package com.qwazix.yellowpad;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -152,7 +152,7 @@ public class SettingsActivity extends PreferenceActivity {
         return super.onOptionsItemSelected(item);
     }
 
-package info.aario.snotepad;
+package com.qwazix.yellowpad;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -194,3 +194,51 @@ public class SettingsActivity extends PreferenceActivity {
 
 
 //        getSupportActionBar().setTitle(this.getString(R.string.pref_title_settings));
+
+
+
+
+
+if (editor_modified) {
+            DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    switch (which) {
+                        case DialogInterface.BUTTON_POSITIVE:
+                            //Yes button clicked
+                            currentEditorFragment.save();
+                            break;
+                        case DialogInterface.BUTTON_NEGATIVE:
+                            //No button clicked
+                            getFragmentManager().popBackStack();
+                            break;
+                        case DialogInterface.BUTTON_NEUTRAL:
+                            //Cancel button clicked
+                            return;
+                    }
+                    setLastOpenedFilePath("");//Clear last opened file path
+                    getFragmentManager().popBackStack();
+                }
+            };
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage(getResources().getString(R.string.save_dialog_question))
+                    .setPositiveButton(getResources().getString(R.string.yes), dialogClickListener)
+                    .setNegativeButton(getResources().getString(R.string.no), dialogClickListener)
+                    .setNeutralButton(getResources().getString(R.string.cancel), dialogClickListener)
+                    .show();
+
+
+
+
+            activity.toast(charSequence.charAt(charSequence.length() - 1) + "");
+
+
+
+
+        etEditor.setOnKeyListener(new View.OnKeyListener() {
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                Log.i("KEY", Integer.toString(keyCode));
+                if(event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_SPACE) saveUndoRedo();
+                return false;
+            }
+        });
